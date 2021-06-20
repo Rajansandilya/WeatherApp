@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+body{
+    background: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+.box{
+    margin: auto;
+    border: 3px solid #737373;
+    margin-top: 30vh;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    height: 400px;
+    width: 200px;
+}
+#weathercon{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+      margin-bottom: 40px;
+    font-size: 100px;
+    
+}
+.info{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+      margin-bottom: 38px;
+}
+.location{
+   
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+.date{
+
+    margin-bottom: 20px;
+}
+.fa-street-view{
+    animation: rotates 3s linear infinite alternate;
+}
+.temp{
+    font-size: 40px;
+}

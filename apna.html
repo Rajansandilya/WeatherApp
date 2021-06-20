@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="box">
+        <div id="weathercon">
+        <i class="fas fa-sun" style="color:yellow"></i> 
+        </div>
+        <div class="info">
+            <h2 class="location"><i class="fas fa-street-view"></i>{%location%},{%country%}</h2>
+            <div id="date"></div>
+             <div class="temp">{%tempval%}</div>
+             <div class="tmpmin_max">Min {%tempmin%} | Max {%tempmax%}</div> 
+        </div>
+    </div>
+    <!-- <script>
+        // const currdate=document.getElementsByClassName('date');
+        let weathercon=document.getElementById('weathercon');
+        const tempstatus="clouds";
+         const getcurrentDay=()=>{
+               var weekday=new Array(7);
+                weekday[0]="Sunday";
+                weekday[1]="Monday";
+                weekday[2]="Tuesday";
+                weekday[3]="wednesday";
+                weekday[4]="Thursday";
+                weekday[5]="Friday";
+                weekday[6]="Saturday";
+                let currtime=new Date();
+                let i=currtime.getDay();
+                return (weekday[i]);
+         }
+        //  const getcurrtime=()=>{
+
+        //  }
+         const getcurrmonth=()=>{
+             let now=new Date();
+              let month=now.getMonth();
+              let date=now.getDate();
+              let hours=now.getHours();
+              let minute=now.getMinutes();
+              var getmonth=new Array(12);
+              getmonth[0]="JAN";
+              getmonth[1]="FEB";
+              getmonth[2]="MAR";
+              getmonth[3]="APR";
+              getmonth[4]="MAY";
+              getmonth[5]="JUN";
+              getmonth[6]="JUL";
+              getmonth[7]="AUG";
+              getmonth[8]="SEP";
+              getmonth[9]="OCT";
+              getmonth[10]="NOV";
+              getmonth[11]="DEC"
+              let curr_month=`${getmonth[month]} ${date}`;
+              return curr_month;   
+         }
+         
+//getcurrentDay();
+const gettimeandminute=()=>{
+    var time = new Date();
+
+let output=  time.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true })
+   return output;
+}
+document.getElementById('date').innerHTML=getcurrentDay()+"  "+ getcurrmonth()+" | "+gettimeandminute();;
+// getcurrmonth()+ "|"+gettimeandminute();
+    </script> -->
+</body>
+</html>
